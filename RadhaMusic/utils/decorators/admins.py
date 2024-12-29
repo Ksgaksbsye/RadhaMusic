@@ -1,9 +1,9 @@
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from RessoMusic import app
-from RessoMusic.misc import SUDOERS, db
-from RessoMusic.utils.database import (
+from RadhaMusic import app
+from RadhaMusic.misc import SUDOERS, db
+from RadhaMusic.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
