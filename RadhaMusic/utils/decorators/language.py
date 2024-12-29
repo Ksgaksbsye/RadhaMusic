@@ -1,5 +1,5 @@
-from RessoMusic.misc import SUDOERS
-from RessoMusic.utils.database import get_lang, is_maintenance
+from RadhaMusic.misc import SUDOERS
+from RadhaMusic.utils.database import get_lang, is_maintenance
 from strings import get_string
 
 
