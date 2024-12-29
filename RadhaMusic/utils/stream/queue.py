@@ -1,8 +1,8 @@
 import asyncio
 from typing import Union
 
-from RessoMusic.misc import db
-from RessoMusic.utils.formatters import check_duration, seconds_to_min
+from RadhaMusic.misc import db
+from RadhaMusic.utils.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
 
