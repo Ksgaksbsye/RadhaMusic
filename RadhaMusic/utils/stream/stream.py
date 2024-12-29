@@ -5,15 +5,15 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from RessoMusic import Carbon, YouTube, app
-from RessoMusic.core.call import AMBOTOP
-from RessoMusic.misc import db
-from RessoMusic.utils.database import add_active_video_chat, is_active_chat
-from RessoMusic.utils.exceptions import AssistantErr
-from RessoMusic.utils.inline import aq_markup, close_markup, stream_markup
-from RessoMusic.utils.pastebin import AMBOTOPBin
-from RessoMusic.utils.stream.queue import put_queue, put_queue_index
-from RessoMusic.utils.thumbnails import gen_thumb
+from RadhaMusic import Carbon, YouTube, app
+from RadhaMusic.core.call import AMBOTOP
+from RadhaMusic.misc import db
+from RadhaMusic.utils.database import add_active_video_chat, is_active_chat
+from RadhaMusic.utils.exceptions import AssistantErr
+from RadhaMusic.utils.inline import aq_markup, close_markup, stream_markup
+from RadhaMusic.utils.pastebin import AMBOTOPBin
+from RadhaMusic.utils.stream.queue import put_queue, put_queue_index
+from RadhaMusic.utils.thumbnails import gen_thumb
 
 
 async def stream(
