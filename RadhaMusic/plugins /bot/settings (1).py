@@ -8,8 +8,8 @@ from pyrogram.types import (
     Message,
 )
 
-from RessoMusic import app
-from RessoMusic.utils.database import (
+from RadhaMusic import app
+from RadhaMusic.utils.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
@@ -25,16 +25,16 @@ from RessoMusic.utils.database import (
     skip_off,
     skip_on,
 )
-from RessoMusic.utils import bot_sys_stats
-from RessoMusic.utils.decorators.admins import ActualAdminCB
-from RessoMusic.utils.decorators.language import language, languageCB
-from RessoMusic.utils.inline.settings import (
+from RadhaMusic.utils import bot_sys_stats
+from RadhaMusic.utils.decorators.admins import ActualAdminCB
+from RadhaMusic.utils.decorators.language import language, languageCB
+from RadhaMusic.utils.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
     vote_mode_markup,
 )
-from RessoMusic.utils.inline.start import private_panel
+from RadhaMusic.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
 
