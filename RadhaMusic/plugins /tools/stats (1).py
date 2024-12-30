@@ -9,13 +9,13 @@ from pyrogram.types import InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from RessoMusic import app
-from RessoMusic.core.userbot import assistants
-from RessoMusic.misc import SUDOERS, mongodb
-from RessoMusic.plugins import ALL_MODULES
-from RessoMusic.utils.database import get_served_chats, get_served_users, get_sudoers,is_autoend,is_autoleave
-from RessoMusic.utils.decorators.language import language, languageCB
-from RessoMusic.utils.inline.stats import back_stats_buttons, stats_buttons
+from RadhaMusic import app
+from RadhaMusic.core.userbot import assistants
+from RadhaMusic.misc import SUDOERS, mongodb
+from RadhaMusic.plugins import ALL_MODULES
+from RadhaMusic.utils.database import get_served_chats, get_served_users, get_sudoers,is_autoend,is_autoleave
+from RadhaMusic.utils.decorators.language import language, languageCB
+from RadhaMusic.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 
