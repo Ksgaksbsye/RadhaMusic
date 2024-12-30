@@ -6,10 +6,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from RessoMusic import app
-from RessoMusic.misc import _boot_
-from RessoMusic.plugins.sudo.sudoers import sudoers_list
-from RessoMusic.utils.database import (
+from RadhaMusic import app
+from RadhaMusic.misc import _boot_
+from RadhaMusic.plugins.sudo.sudoers import sudoers_list
+from RadhaMusic.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -17,10 +17,10 @@ from RessoMusic.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from RessoMusic.utils import bot_sys_stats
-from RessoMusic.utils.decorators.language import LanguageStart
-from RessoMusic.utils.formatters import get_readable_time
-from RessoMusic.utils.inline import help_pannel, private_panel, start_panel
+from RadhaMusic.utils import bot_sys_stats
+from RadhaMusic.utils.decorators.language import LanguageStart
+from RadhaMusic.utils.formatters import get_readable_time
+from RadhaMusic.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 from RessoMusic.misc import SUDOERS
@@ -132,7 +132,7 @@ async def welcome(client, message: Message):
 
             if isinstance(config.OWNER_ID, int): 
                 if member.id == config.OWNER_ID:
-                    owner = f"#BOT_OWNER\n\n 𝙎𝙩𝙖𝙮 𝘼𝙡𝙚𝙧𝙩 ⚠️\n\n{member.mention} 𝙊𝙬𝙣𝙚𝙧 𝗢𝗳 {app.mention} 𝙟𝙪𝙨𝙩 𝙟𝙤𝙞𝙣𝙚𝙙 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥 <code>{message.chat.title}</code>.\n\n𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗠𝗲 𝗛𝗲𝗿𝗲 👇🏻🤭💕\n\n┏━━━━━━━━━━━━┓\n┣★ 𝗨𝗽𝗱𝗮𝘁𝗲 -: @NAINCY_UPDATES\n┣★ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 -: @FRIEND_KI_MASTI_CLUB \n┣★ 𝗕𝗼𝘁 𝗨𝘀𝗲𝗿𝗡𝗮𝗺𝗲 -: @{app.username}\n┣★ 𝙉𝙤𝙩𝙚  -: 𝗧𝗵𝗶𝘀 𝗜𝘀 𝗢𝗻𝗹𝘆 𝗙𝗼𝗿 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗙𝗼𝗿 𝗠𝘆 𝗢𝘄𝗻𝗲𝗿 {member.mention}."
+                    owner = f"#BOT_OWNER\n\n 𝙎𝙩𝙖𝙮 𝘼𝙡𝙚𝙧𝙩 ⚠️\n\n{member.mention} 𝙊𝙬𝙣𝙚𝙧 𝗢𝗳 {app.mention} 𝙟𝙪𝙨𝙩 𝙟𝙤𝙞𝙣𝙚𝙙 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥 <code>{message.chat.title}</code>.\n\n𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗠𝗲 𝗛𝗲𝗿𝗲 👇🏻🤭💕\n\n┏━━━━━━━━━━━━┓\n┣★ 𝗨𝗽𝗱𝗮𝘁𝗲 -: @NAINCY_UPDATES\n┣★ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 -: @RADHAMUSIC_SUPPORT \n┣★ 𝗕𝗼𝘁 𝗨𝘀𝗲𝗿𝗡𝗮𝗺𝗲 -: @{app.username}\n┣★ 𝙉𝙤𝙩𝙚  -: 𝗧𝗵𝗶𝘀 𝗜𝘀 𝗢𝗻𝗹𝘆 𝗙𝗼𝗿 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗙𝗼𝗿 𝗠𝘆 𝗢𝘄𝗻𝗲𝗿 {member.mention}."
                     sent_message = await message.reply_text(owner, reply_markup=buttons)
                     await asyncio.sleep(180)
                     await sent_message.delete()  
@@ -140,7 +140,7 @@ async def welcome(client, message: Message):
 
             elif isinstance(config.OWNER_ID, (list, set)): 
                 if member.id in config.OWNER_ID:
-                    owner = f"#BOT_OWNER\n\n 𝙎𝙩𝙖𝙮 𝘼𝙡𝙚𝙧𝙩 ⚠️\n\n{member.mention} 𝙊𝙬𝙣𝙚𝙧 𝗢𝗳 {app.mention} 𝙟𝙪𝙨𝙩 𝙟𝙤𝙞𝙣𝙚𝙙 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥 <code>{message.chat.title}</code>.\n\n𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗠𝗲 𝗛𝗲𝗿𝗲 👇🏻🤭💕\n\n┏━━━━━━━━━━━━┓\n┣★ 𝗨𝗽𝗱𝗮𝘁𝗲 -: @NAINCY_UPDATES \n┣★ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 -: @FRIEND_KI_MASTI_CLUB \n┣★ 𝗕𝗼𝘁 𝗨𝘀𝗲𝗿𝗡𝗮𝗺𝗲 -: @{app.username}\n┣★ 𝙉𝙤𝙩𝙚  -: 𝗧𝗵𝗶𝘀 𝗜𝘀 𝗢𝗻𝗹𝘆 𝗙𝗼𝗿 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗙𝗼𝗿 𝗠𝘆 𝗢𝘄𝗻𝗲𝗿 {member.mention}."
+                    owner = f"#BOT_OWNER\n\n 𝙎𝙩𝙖𝙮 𝘼𝙡𝙚𝙧𝙩 ⚠️\n\n{member.mention} 𝙊𝙬𝙣𝙚𝙧 𝗢𝗳 {app.mention} 𝙟𝙪𝙨𝙩 𝙟𝙤𝙞𝙣𝙚𝙙 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥 <code>{message.chat.title}</code>.\n\n𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗠𝗲 𝗛𝗲𝗿𝗲 👇🏻🤭💕\n\n┏━━━━━━━━━━━━┓\n┣★ 𝗨𝗽𝗱𝗮𝘁𝗲 -: @NAINCY_UPDATES \n┣★ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 -: @RADHAMUSIC_SUPPORT \n┣★ 𝗕𝗼𝘁 𝗨𝘀𝗲𝗿𝗡𝗮𝗺𝗲 -: @{app.username}\n┣★ 𝙉𝙤𝙩𝙚  -: 𝗧𝗵𝗶𝘀 𝗜𝘀 𝗢𝗻𝗹𝘆 𝗙𝗼𝗿 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗙𝗼𝗿 𝗠𝘆 𝗢𝘄𝗻𝗲𝗿 {member.mention}."
                     sent_message = await message.reply_text(owner, reply_markup=buttons)
                     await asyncio.sleep(180) 
                     await sent_message.delete()  
@@ -148,7 +148,7 @@ async def welcome(client, message: Message):
 
             if isinstance(SUDOERS, int): 
                 if member.id == SUDOERS:
-                    AMBOT = f"#Sudo_User\n\n 𝙎𝙩𝙖𝙮 𝘼𝙡𝙚𝙧𝙩 ⚠️\n\n𝗢𝗙 {app.mention} 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥 {member.mention} just joined the group <code>{message.chat.title}</code>.\n\n𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗠𝗲 𝗛𝗲𝗿𝗲 👇🏻🤭💕\n\n┏━━━━━━━━━━━━┓\n┣★ 𝗨𝗽𝗱𝗮𝘁𝗲 -: @NAINCY_UPDATES \n┣★ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 -: @FRIEND_KI_MASTI_CLUB \n┣★ 𝗕𝗼𝘁 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 -: @{app.username}."
+                    AMBOT = f"#Sudo_User\n\n 𝙎𝙩𝙖𝙮 𝘼𝙡𝙚𝙧𝙩 ⚠️\n\n𝗢𝗙 {app.mention} 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥 {member.mention} just joined the group <code>{message.chat.title}</code>.\n\n𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗠𝗲 𝗛𝗲𝗿𝗲 👇🏻🤭💕\n\n┏━━━━━━━━━━━━┓\n┣★ 𝗨𝗽𝗱𝗮𝘁𝗲 -: @NAINCY_UPDATES \n┣★ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 -: @RADHAMUSIC_SUPPORT \n┣★ 𝗕𝗼𝘁 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 -: @{app.username}."
                     sent_message = await message.reply_text(AMBOT, reply_markup=buttons)
                     await asyncio.sleep(180) 
                     await sent_message.delete()  
@@ -156,7 +156,7 @@ async def welcome(client, message: Message):
 
             elif isinstance(SUDOERS, (list, set)):
                 if member.id in SUDOERS:
-                    AMBOT = f"#Sudo_User\n\n 𝙎𝙩𝙖𝙮 𝘼𝙡𝙚𝙧𝙩 ⚠️\n\n𝗢𝗙 {app.mention} 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥 {member.mention} just joined the group <code>{message.chat.title}</code>.\n\n𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗠𝗲 𝗛𝗘𝗥𝗘 👇🏻🤭💕\n\n┏━━━━━━━━━━━━┓\n┣★ 𝗨𝗽𝗱𝗮𝘁𝗲 -: @NAINCY_UPDATES \n┣★ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 -: @FRIEND_KI_MASTI_CLUB \n┣★ 𝗕𝗢𝗧 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 -: @{app.username}."
+                    AMBOT = f"#Sudo_User\n\n 𝙎𝙩𝙖𝙮 𝘼𝙡𝙚𝙧𝙩 ⚠️\n\n𝗢𝗙 {app.mention} 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥 {member.mention} just joined the group <code>{message.chat.title}</code>.\n\n𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗠𝗲 𝗛𝗘𝗥𝗘 👇🏻🤭💕\n\n┏━━━━━━━━━━━━┓\n┣★ 𝗨𝗽𝗱𝗮𝘁𝗲 -: @NAINCY_UPDATES \n┣★ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 -: @RADHAMUSIC_SUPPORT \n┣★ 𝗕𝗢𝗧 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 -: @{app.username}."
                     sent_message = await message.reply_text(AMBOT, reply_markup=buttons)
                     await asyncio.sleep(180) 
                     await sent_message.delete()  
