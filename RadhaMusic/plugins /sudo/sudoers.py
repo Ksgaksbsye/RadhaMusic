@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from RessoMusic import app
-from RessoMusic.misc import SUDOERS
-from RessoMusic.utils.database import add_sudo, remove_sudo
-from RessoMusic.utils.decorators.language import language
-from RessoMusic.utils.extraction import extract_user
-from RessoMusic.utils.inline import close_markup
+from RadhaMusic import app
+from RadhaMusic.misc import SUDOERS
+from RadhaMusic.utils.database import add_sudo, remove_sudo
+from RadhaMusic.utils.decorators.language import language
+from RadhaMusic.utils.extraction import extract_user
+from RadhaMusic.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
