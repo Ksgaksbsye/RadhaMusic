@@ -1,11 +1,11 @@
-from RessoMusic import app
+from RadhaMusic import app
 from pyrogram import Client, filters
 from pyrogram.errors import ChatIdInvalid
 from pyrogram.errors import ChatAdminRequired, ChatNotModified, ChatIdInvalid, FloodWait, InviteHashExpired, UserNotParticipant
 import os
 import json
 from pyrogram.types import Message
-from RessoMusic.misc import SUDOERS
+from RadhaMusic.misc import SUDOERS
 
 @app.on_message(filters.command(["link", "invitelink"], prefixes=["/","!"]) & SUDOERS)
 async def link_command_handler(client: Client, message: Message):
