@@ -9,9 +9,9 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from RessoMusic import YouTube, app
-from RessoMusic.misc import SUDOERS
-from RessoMusic.utils.database import (
+from RadhaMusic import YouTube, app
+from RadhaMusic.misc import SUDOERS
+from RadhaMusic.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -20,7 +20,7 @@ from RessoMusic.utils.database import (
     is_active_chat,
     is_maintenance,
 )
-from RessoMusic.utils.inline import botplaylist_markup
+from RadhaMusic.utils.inline import botplaylist_markup
 from config import PLAYLIST_IMG_URL, SUPPORT_GROUP, adminlist
 from strings import get_string
 
