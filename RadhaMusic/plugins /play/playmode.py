@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from RessoMusic import app
-from RessoMusic.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from RessoMusic.utils.decorators import language
-from RessoMusic.utils.inline.settings import playmode_users_markup
+from RadhaMusic import app
+from RadhaMusic.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from RadhaMusic.utils.decorators import language
+from RadhaMusic.utils.inline.settings import playmode_users_markup
 from config import BANNED_USERS
 
 
