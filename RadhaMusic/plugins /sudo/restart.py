@@ -10,15 +10,15 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
 import config
-from RessoMusic import app
-from RessoMusic.misc import HAPP, SUDOERS, XCB
+from RadhaMusic import app
+from RadhaMusic.misc import HAPP, SUDOERS, XCB
 from RessoMusic.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from RessoMusic.utils.decorators.language import language
-from RessoMusic.utils.pastebin import AMBOTOPBin
+from RadhaMusic.utils.decorators.language import language
+from RadhaMusic.utils.pastebin import AMBOTOPBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
