@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from RessoMusic import YouTube, app
-from RessoMusic.utils.channelplay import get_channeplayCB
-from RessoMusic.utils.decorators.language import languageCB
-from RessoMusic.utils.stream.stream import stream
+from RadhaMusic import YouTube, app
+from RadhaMusic.utils.channelplay import get_channeplayCB
+from RadhaMusic.utils.decorators.language import languageCB
+from RadhaMusic.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
