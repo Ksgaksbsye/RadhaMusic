@@ -4,17 +4,17 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from RessoMusic import app
-from RessoMusic.misc import SUDOERS
-from RessoMusic.utils.database import (
+from RadhaMusic import app
+from RadhaMusic.misc import SUDOERS
+from RadhaMusic.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
     get_served_chats,
     get_served_users,
 )
-from RessoMusic.utils.decorators.language import language
-from RessoMusic.utils.formatters import alpha_to_int
+from RadhaMusic.utils.decorators.language import language
+from RadhaMusic.utils.formatters import alpha_to_int
 from config import adminlist
 
 IS_BROADCASTING = False
