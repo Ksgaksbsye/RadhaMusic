@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from RessoMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from RessoMusic.core.call import AMBOTOP
-from RessoMusic.utils import seconds_to_min, time_to_seconds
-from RessoMusic.utils.channelplay import get_channeplayCB
-from RessoMusic.utils.decorators.language import languageCB
-from RessoMusic.utils.decorators.play import PlayWrapper
-from RessoMusic.utils.formatters import formats
-from RessoMusic.utils.inline import (
+from RadhaMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from RadhaMusic.core.call import AMBOTOP
+from RadhaMusic.utils import seconds_to_min, time_to_seconds
+from RadhaMusic.utils.channelplay import get_channeplayCB
+from RadhaMusic.utils.decorators.language import languageCB
+from RadhaMusic.utils.decorators.play import PlayWrapper
+from RadhaMusic.utils.formatters import formats
+from RadhaMusic.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from RessoMusic.utils.logger import play_logs
-from RessoMusic.utils.stream.stream import stream
+from RadhaMusic.utils.logger import play_logs
+from RadhaMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
