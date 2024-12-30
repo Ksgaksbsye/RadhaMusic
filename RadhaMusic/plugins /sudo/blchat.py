@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from RessoMusic import app
-from RessoMusic.misc import SUDOERS
-from RessoMusic.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from RessoMusic.utils.decorators.language import language
+from RadhaMusic import app
+from RadhaMusic.misc import SUDOERS
+from RadhaMusic.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from RadhaMusic.utils.decorators.language import language
 from config import BANNED_USERS
 
 
