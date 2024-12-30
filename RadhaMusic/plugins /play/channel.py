@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter, ChatMemberStatus, ChatType
 from pyrogram.types import Message
 
-from RessoMusic import app
-from RessoMusic.utils.database import set_cmode
-from RessoMusic.utils.decorators.admins import AdminActual
+from RadhaMusic import app
+from RadhaMusic.utils.database import set_cmode
+from RadhaMusic.utils.decorators.admins import AdminActual
 from config import BANNED_USERS
 
 
