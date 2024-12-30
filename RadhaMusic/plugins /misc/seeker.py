@@ -1,7 +1,7 @@
 import asyncio
 
-from RessoMusic.misc import db
-from RessoMusic.utils.database import get_active_chats, is_music_playing
+from RadhaMusic.misc import db
+from RadhaMusic.utils.database import get_active_chats, is_music_playing
 
 
 async def timer():
