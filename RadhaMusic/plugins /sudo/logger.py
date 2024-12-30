@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from RessoMusic import app
-from RessoMusic.misc import SUDOERS
-from RessoMusic.utils.database import add_off, add_on
-from RessoMusic.utils.decorators.language import language
+from RadhaMusic import app
+from RadhaMusic.misc import SUDOERS
+from RadhaMusic.utils.database import add_off, add_on
+from RadhaMusic.utils.decorators.language import language
 
 
 @app.on_message(filters.command(["logger"]) & SUDOERS)
