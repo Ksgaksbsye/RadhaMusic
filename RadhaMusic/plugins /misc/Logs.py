@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from RessoMusic import app
-from RessoMusic.utils.database import (
+from RadhaMusic import app
+from RadhaMusic.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
