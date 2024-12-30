@@ -3,10 +3,10 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 from pytgcalls.exceptions import GroupCallNotFound
 import config
-from RessoMusic import app
-from RessoMusic.misc import db
-from RessoMusic.core.call import AMBOTOP, autoend, counter
-from RessoMusic.utils.database import get_client, set_loop, is_active_chat, is_autoend, is_autoleave
+from RadhaMusic import app
+from RadhaMusic.misc import db
+from RadhaMusic.core.call import AMBOTOP, autoend, counter
+from RadhaMusic.utils.database import get_client, set_loop, is_active_chat, is_autoend, is_autoleave
 import logging
 
 async def auto_leave():
