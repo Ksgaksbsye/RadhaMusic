@@ -3,11 +3,11 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message
 
-from RessoMusic import app
-from RessoMusic.core.call import AMBOTOP
-from RessoMusic.utils import bot_sys_stats
-from RessoMusic.utils.decorators.language import language
-from RessoMusic.utils.inline import supp_markup
+from RadhaMusic import app
+from RadhaMusic.core.call import AMBOTOP
+from RadhaMusic.utils import bot_sys_stats
+from RadhaMusic.utils.decorators.language import language
+from RadhaMusic.utils.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 
