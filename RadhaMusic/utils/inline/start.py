@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from RessoMusic import app
+from RadhaMusic import app
 
 
 def start_panel(_):
