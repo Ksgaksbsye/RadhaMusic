@@ -5,12 +5,12 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
-from RessoMusic import app
-from RessoMusic.core.call import AMBOTOP
-from RessoMusic.misc import db
-from RessoMusic.utils.database import get_assistant, get_authuser_names, get_cmode
-from RessoMusic.utils.decorators import ActualAdminCB, AdminActual, language
-from RessoMusic.utils.formatters import alpha_to_int, get_readable_time
+from RadhaMusic import app
+from RadhaMusic.core.call import AMBOTOP
+from RadhaMusic.misc import db
+from RadhaMusic.utils.database import get_assistant, get_authuser_names, get_cmode
+from RadhaMusic.utils.decorators import ActualAdminCB, AdminActual, language
+from RadhaMusic import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 
 rel = {}
