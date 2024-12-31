@@ -3,14 +3,14 @@ from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from RessoMusic import app
-from RessoMusic.utils import help_pannel
-from RessoMusic.utils.database import get_lang
-from RessoMusic.utils.decorators.language import LanguageStart, languageCB
-from RessoMusic.utils.inline.help import help_back_markup, private_help_panel
+from RadhaMusic import app
+from RadhaMusic.utils import help_pannel
+from RadhaMusic.utils.database import get_lang
+from RadhaMusic.utils.decorators.language import LanguageStart, languageCB
+from RadhaMusic.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_GROUP
 from strings import get_string, helpers
-from RessoMusic.misc import SUDOERS
+from RadhaMusic.misc import SUDOERS
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
