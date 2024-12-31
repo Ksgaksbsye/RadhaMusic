@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from RessoMusic import LOGGER, YouTube, app
-from RessoMusic.misc import db
-from RessoMusic.utils.database import (
+from RadhaMusic import LOGGER, YouTube, app
+from RadhaMusic.misc import db
+from RadhaMusic.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -31,11 +31,11 @@ from RessoMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from RessoMusic.utils.exceptions import AssistantErr
-from RessoMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from RessoMusic.utils.inline.play import stream_markup
-from RessoMusic.utils.stream.autoclear import auto_clean
-from RessoMusic.utils.thumbnails import gen_thumb
+from RadhaMusic.utils.exceptions import AssistantErr
+from RadhaMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
+from RadhaMusic.utils.inline.play import stream_markup
+from RadhaMusic.utils.stream.autoclear import auto_clean
+from RadhaMusic.utils.thumbnails import gen_thumb
 from strings import get_string
 
 autoend = {}
