@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from RessoMusic import YouTube, app
-from RessoMusic.core.call import AMBOTOP
-from RessoMusic.misc import db
-from RessoMusic.utils import AdminRightsCheck, seconds_to_min
-from RessoMusic.utils.inline import close_markup
+from RadhaMusic import YouTube, app
+from RadhaMusic.core.call import AMBOTOP
+from RadhaMusic.misc import db
+from RadhaMusic.utils import AdminRightsCheck, seconds_to_min
+from RadhaMusic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
