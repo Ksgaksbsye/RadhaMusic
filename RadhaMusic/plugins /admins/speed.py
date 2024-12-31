@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from RessoMusic import app
-from RessoMusic.core.call import AMBOTOP
-from RessoMusic.misc import SUDOERS, db
-from RessoMusic.utils import AdminRightsCheck
-from RessoMusic.utils.database import is_active_chat, is_nonadmin_chat
-from RessoMusic.utils.decorators.language import languageCB
-from RessoMusic.utils.inline import close_markup, speed_markup
+from RadhaMusic import app
+from RadhaMusic.core.call import AMBOTOP
+from RadhaMusic.misc import SUDOERS, db
+from RadhaMusic.utils import AdminRightsCheck
+from RadhaMusic.utils.database import is_active_chat, is_nonadmin_chat
+from RadhaMusic.utils.decorators.language import languageCB
+from RadhaMusic.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
