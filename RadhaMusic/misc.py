@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from RessoMusic.core.mongo import mongodb
+from RadhaMusic.core.mongo import mongodb
 
 from .logging import LOGGER
 
