@@ -3,10 +3,10 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from RessoMusic import YouTube, app
-from RessoMusic.core.call import AMBOTOP
-from RessoMusic.misc import SUDOERS, db
-from RessoMusic.utils.database import (
+from RadhaMusic import YouTube, app
+from RadhaMusic.core.call import AMBOTOP
+from RadhaMusic.misc import SUDOERS, db
+from RadhaMusic.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -17,11 +17,11 @@ from RessoMusic.utils.database import (
     music_on,
     set_loop,
 )
-from RessoMusic.utils.decorators.language import languageCB
-from RessoMusic.utils.formatters import seconds_to_min
-from RessoMusic.utils.inline import close_markup, stream_markup, stream_markup_timer
-from RessoMusic.utils.stream.autoclear import auto_clean
-from RessoMusic.utils.thumbnails import gen_thumb
+from RadhaMusic.utils.decorators.language import languageCB
+from RadhaMusic.utils.formatters import seconds_to_min
+from RadhaMusic.utils.inline import close_markup, stream_markup, stream_markup_timer
+from RadhaMusic.utils.stream.autoclear import auto_clean
+from RadhaMusic.utils.thumbnails import gen_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
