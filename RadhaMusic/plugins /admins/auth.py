@@ -1,16 +1,16 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from RessoMusic import app
-from RessoMusic.utils import extract_user, int_to_alpha
-from RessoMusic.utils.database import (
+from RadhaMusic import app
+from RadhaMusic.utils import extract_user, int_to_alpha
+from RadhaMusic.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from RessoMusic.utils.decorators import AdminActual, language
-from RessoMusic.utils.inline import close_markup
+from RadhaMusic.utils.decorators import AdminActual, language
+from RadhaMusic.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
