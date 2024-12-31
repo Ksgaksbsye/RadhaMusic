@@ -8,8 +8,8 @@ import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
-from RessoMusic.utils.database import is_on_off
-from RessoMusic.utils.formatters import time_to_seconds
+from RadhaMusic.utils.database import is_on_off
+from RadhaMusic.utils.formatters import time_to_seconds
 import os
 import glob
 import random
@@ -22,7 +22,7 @@ import random
 
 
 def cookie_txt_file():
-    cookie_dir = "RessoMusic/cookies"
+    cookie_dir = "cookies"
     cookies_files = [f for f in os.listdir(cookie_dir) if f.endswith(".txt")]
 
     cookie_file = os.path.join(cookie_dir, random.choice(cookies_files))
