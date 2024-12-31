@@ -1,6 +1,3 @@
-from strings import get_string
-
-from RadhaMusic import app
 from RadhaMusic.misc import SUDOERS
 from RadhaMusic.utils.database import get_lang, is_maintenance
 from strings import get_string
