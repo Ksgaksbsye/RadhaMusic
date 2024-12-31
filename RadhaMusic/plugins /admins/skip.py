@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from RessoMusic import YouTube, app
-from RessoMusic.core.call import AMBOTOP
-from RessoMusic.misc import db
-from RessoMusic.utils.database import get_loop
-from RessoMusic.utils.decorators import AdminRightsCheck
-from RessoMusic.utils.inline import close_markup, stream_markup
-from RessoMusic.utils.stream.autoclear import auto_clean
-from RessoMusic.utils.thumbnails import gen_thumb
+from RadhaMusic import YouTube, app
+from RadhaMusic.core.call import AMBOTOP
+from RadhaMusic.misc import db
+from RadhaMusic.utils.database import get_loop
+from RadhaMusic.utils.decorators import AdminRightsCheck
+from RadhaMusic.utils.inline import close_markup, stream_markup
+from RadhaMusic.utils.stream.autoclear import auto_clean
+from RadhaMusic.utils.thumbnails import gen_thumb
 from config import BANNED_USERS
 
 
