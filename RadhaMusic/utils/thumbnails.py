@@ -17,7 +17,7 @@ from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import YOUTUBE_IMG_URL
-from RessoMusic import app
+from RadhaMusic import app
 
 logging.basicConfig(level=logging.INFO)
 
